@@ -1,5 +1,5 @@
 <div style="clear: both;">
-  <div style="float: left; ; margin-right: 1em;">
+  <div style="float: left; margin-right: 1em;">
     <img src='https://randommeme-five.vercel.app/' style="height: 200px;"/>
   <div/>
   <div>
