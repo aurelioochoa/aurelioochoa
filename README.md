@@ -1,5 +1,5 @@
 <div align="center">
-  <img src='https://randommeme-five.vercel.app/' alt="Random Meme" style="height: 200px;">
+  <img src='https://randommeme-five.vercel.app/' alt="Random Meme" style="height: 400px;">
 </div>
 
 ### 👋 Hello, I'm Aurelio Ochoa!
