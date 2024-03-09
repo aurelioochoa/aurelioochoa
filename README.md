@@ -1,4 +1,5 @@
-# 💫 About Me:
+<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
+
 🔭👋 Hello, I'm Aurelio Ochoa, a passionate sysadmin and software developer. With hands-on experience in Linux system administration, I thrive in optimizing server performance. I specialize in building scalable and secure web applications, leveraging my expertise in technologies like Linux, Django, and Docker. I'm committed to continuous learning and pushing the boundaries of what's possible.
 
 # 💻 Tech Stack:
@@ -10,9 +11,6 @@
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-### 😂 Random Dev Meme
-<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
 ---
 [![](https://visitcount.itsvg.in/api?id=aurelioochoa&icon=2&color=0)](https://visitcount.itsvg.in)
