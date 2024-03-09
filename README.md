@@ -1,10 +1,11 @@
-<div style="display: flex; align-items: center;">
+<p align="left">
   <img src='https://randommeme-five.vercel.app/' alt="Random Meme" style="height: 200px; margin-right: 20px;">
-  <div>
-    <h3>👋 Hello, I'm Aurelio Ochoa!</h3>
-    <p>I'm a passionate sysadmin and software developer with hands-on experience in Linux system administration. I excel in optimizing server performance and specialize in building scalable and secure web applications. My expertise includes technologies like Linux, Django, and Docker. I'm dedicated to continuous learning and pushing the boundaries of what's possible in the tech world.</p>
-  </div>
-</div>
+</p>
+
+### 👋 Hello, I'm Aurelio Ochoa!
+
+I'm a passionate sysadmin and software developer with hands-on experience in Linux system administration. I excel in optimizing server performance and specialize in building scalable and secure web applications. My expertise includes technologies like Linux, Django, and Docker. I'm dedicated to continuous learning and pushing the boundaries of what's possible in the tech world.
+
 
 
 
