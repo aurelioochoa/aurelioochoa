@@ -1,6 +1,6 @@
 <div>
   <div style="float: left;">
-    <img src='https://randommeme-five.vercel.app/' style="height: 200px; float: left;"/>
+    <img src='https://randommeme-five.vercel.app/' style="height: 200px;"/>
   <div/>
   <div>
   🔭👋 Hello, I'm Aurelio Ochoa, a passionate sysadmin and software developer. With hands-on experience in Linux system administration, I thrive in optimizing server performance. I specialize in building scalable and secure web applications, leveraging my expertise in technologies like Linux, Django, and Docker. I'm committed to continuous learning and pushing the boundaries of what's possible.
