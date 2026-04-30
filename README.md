@@ -32,3 +32,11 @@ My approach is centered on **reducing deployment time, improving uptime, and str
   ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 </div>
+
+## 📫 Contact
+
+* LinkedIn: https://www.linkedin.com/in/aurelioochoa
+* Email: contact@aurelioochoa.dev
+* Portfolio: https://aurelioochoa.dev
+
+If you’re building scalable web platforms or need Linux/DevOps support, let’s connect.
