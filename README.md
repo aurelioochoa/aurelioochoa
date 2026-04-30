@@ -6,9 +6,9 @@
 
 ### SysAdmin &amp; Backend Developer
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-aurelioochoa.dev-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://aurelioochoa.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-aurelioochoa.github.io-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://aurelioochoa.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aurelioochoa-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aurelioochoa)
-[![Email](https://img.shields.io/badge/Email-contact%40aurelioochoa.dev-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@aurelioochoa.dev)
+[![Email](https://img.shields.io/badge/Email-aurelioochoagomez@hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aurelioochoagomez@hotmail.com)
 
 [🇬🇧 English](#-english) · [🇪🇸 Español](#-español)
 
