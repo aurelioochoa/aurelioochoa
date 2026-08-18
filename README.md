@@ -22,11 +22,9 @@
 
 ### 👋 About Me
 
-- **SysAdmin + Backend Developer** focused on reliable infrastructure and production-ready services.
+- **SysAdmin + Vibe Coder** focused on reliable infrastructure and production-ready services.
 - 🧰 **Focus**: Linux automation, Docker deployments, security hardening, and CI/CD pipelines for scalable environments.
 - 🎯 **Approach**: reducing deployment time, improving uptime, and strengthening security posture.
-- 🔭 **Currently working on**: <!-- completar -->
-- 🌱 **Currently learning**: <!-- completar -->
 - 💬 **Open to remote opportunities / collaborations**.
 
 ### � Tech Stack
