@@ -4,7 +4,7 @@
   <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=34&duration=3500&pause=800&color=00D4FF&center=true&vCenter=true&width=520&lines=Aurelio+Ochoa" alt="Aurelio Ochoa" />
 </a>
 
-### SysAdmin &amp; Backend Developer
+### SysAdmin &amp; Vibe Coder
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-aurelioochoa.github.io-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://aurelioochoa.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-aurelioochoa-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aurelioochoa)
