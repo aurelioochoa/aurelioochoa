@@ -33,8 +33,9 @@ jobs:
           # `read:user` + `repo`) is configured above.
           base: header, activity, community
           config_timezone: America/Guayaquil
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          # isocalendar is intentionally off: its 3D plate renders on a light
+          # background that cannot be themed via extras_css, and the streak +
+          # snake cards below it already cover contribution activity.
           config_display: large
           config_animations: no
           extras_css: |
