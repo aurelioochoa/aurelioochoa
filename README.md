@@ -9,7 +9,7 @@
 [![Email](https://img.shields.io/badge/Email-aurelioochoagomez@hotmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:aurelioochoagomez@hotmail.com)
 [![Location](https://img.shields.io/badge/Guayaquil-Ecuador-FFD100?style=for-the-badge&logo=googlemaps&logoColor=black)](#)
 
-**[🇬🇧 English](#-english) · [🇪🇸 Español](#-español)**
+**[🇬🇧 English](#-english) · [🇪🇸 Español](#-español) · [🇩🇪 Deutsch](#-deutsch)**
 
 </div>
 
@@ -94,7 +94,7 @@ Highlights: on-prem Linux servers and databases, automated testing and deploymen
 
 > If you are building scalable web platforms, need Linux/DevOps support, or need certified drone operations — let's talk.
 
-<div align="right"><a href="#-español">🇪🇸 Español ↓</a></div>
+<div align="right"><a href="#-español">🇪🇸 Español ↓</a> · <a href="#-deutsch">🇩🇪 Deutsch ↓</a></div>
 
 ---
 
@@ -157,7 +157,70 @@ Destacados: servidores Linux y bases de datos en sitio, pruebas y despliegues au
 
 > Si estás construyendo plataformas web escalables, necesitas soporte Linux/DevOps u operaciones certificadas con drones, hablemos.
 
-<div align="right"><a href="#-english">🇬🇧 English ↑</a></div>
+<div align="right"><a href="#-english">🇬🇧 English ↑</a> · <a href="#-deutsch">🇩🇪 Deutsch ↓</a></div>
+
+---
+
+<a id="-deutsch"></a>
+
+## 🇩🇪 Deutsch
+
+<img src="assets/divider-about.webp" alt="" width="100%" />
+
+### 👋 Über mich
+
+Vielseitiger Technologie-Profi, der **Full-Stack-Webentwicklung** mit **zertifiziertem Drohnenbetrieb (UAS)** und einer Berufsausbildung in der Gastronomie verbindet. Drei Jahre Erfahrung in Frontend-Entwicklung, Systemadministration und Cloud-Infrastruktur.
+
+- 🚁 **Aktuell**: Ich fliege Präzisions-Sprühmissionen in der Landwirtschaft mit DJI Agras T50/T100 bei **Fumigasa** und entwickle daneben freiberufliche Web- und Automatisierungsprojekte.
+- 🛠 **Zuletzt gebaut**: die Website des Unternehmens entworfen und umgesetzt sowie Mailserver-Automatisierungen entwickelt, die Abo-Updates für Medienbeobachtungsdienste versenden (**Mediacor Plus**).
+- 🎓 **Parallel im Studium**: Kochkunst an der *Escuela Culinaria de las Américas* — Abschluss im Februar 2026.
+- 🌍 **Sprachen**: Spanisch (Muttersprache) · Englisch (muttersprachliches Niveau) · Deutsch (B2).
+- 💬 **Offen für Remote-Positionen und Zusammenarbeit.**
+
+### 🧰 Tech-Stack
+
+Die Badges sind in allen Sprachen identisch — **[zum vollständigen Stack ↑](#-tech-stack)**.
+
+<img src="assets/divider-uas.webp" alt="" width="100%" />
+
+### 🚁 UAS-Betrieb
+
+**Zertifizierter UAS-Pilot — DGAC Ecuador (2025)**
+
+- Präzisions-Sprühmissionen in der Landwirtschaft mit **DJI Agras T50** und **T100**.
+- Planung und Durchführung von Flugmissionen inklusive Feldvermessung und Routenplanung.
+- Wartung und Kalibrierung der UAS sowie der Sprühausrüstung.
+
+### 💼 Berufserfahrung
+
+| Position | Wo | Wann |
+| --- | --- | --- |
+| **Agrardrohnen-Pilot** | Fumigasa · Ecuador | Mai 2024 – heute |
+| **Freiberuflicher Web- und Automatisierungsentwickler** | Mediacor Plus · Remote | 2025 |
+| **Praktikant Systemadministration** | Universidad Europea del Atlántico · Spanien | Sep. 2023 – Feb. 2024 |
+| **Praktikant Frontend-Webentwicklung** | Universidad Europea del Atlántico · Spanien | Sep. 2022 – Sep. 2023 |
+| **Frontend-Softwareentwickler** | Just Click Media · Guayaquil | Mai 2021 – Mai 2022 |
+
+Schwerpunkte: Linux-Server und Datenbanken on-premise, automatisierte Tests und Deployments mit Jenkins, Cloud-Infrastruktur und automatisierte Deployments auf der Google Cloud Platform, Containerisierung von Entwicklerprojekten mit Docker, individuelle WordPress-Themes in PHP und Prozessautomatisierung mit Google Apps Script.
+
+### 🎓 Ausbildung
+
+<img src="assets/culinary-feature.webp" alt="Angerichtete Teller am Pass einer Spitzenküche" width="100%" />
+
+- **Studium der Kochkunst · Schwerpunkt Küchenchef** — Escuela Culinaria de las Américas, Guayaquil *(Feb. 2026)*
+- **Abitur** — Colegio Alemán Humboldt de Guayaquil (Deutsche Auslandsschule)
+
+<img src="assets/divider-contact.webp" alt="" width="100%" />
+
+### 📫 Kontakt
+
+- **Portfolio** — [aurelioochoa.github.io](https://aurelioochoa.github.io)
+- **LinkedIn** — [in/aurelioochoa](https://www.linkedin.com/in/aurelioochoa)
+- **E-Mail** — [aurelioochoagomez@hotmail.com](mailto:aurelioochoagomez@hotmail.com)
+
+> Wenn Sie skalierbare Web-Plattformen bauen, Unterstützung bei Linux/DevOps oder zertifizierten Drohnenbetrieb brauchen — sprechen wir.
+
+<div align="right"><a href="#-english">🇬🇧 English ↑</a> · <a href="#-español">🇪🇸 Español ↑</a></div>
 
 ---
 
