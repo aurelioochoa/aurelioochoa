@@ -79,6 +79,8 @@ Highlights: on-prem Linux servers and databases, automated testing and deploymen
 
 ### 🎓 Education
 
+<img src="assets/culinary-feature.webp" alt="Plated dishes on a fine-dining kitchen pass" width="100%" />
+
 - **Culinary Arts degree** — Escuela Culinaria de las Américas, Guayaquil *(Feb 2026)*
 - **High school** — Colegio Alemán Humboldt de Guayaquil
 
@@ -139,6 +141,8 @@ Los badges son los mismos en ambos idiomas — **[ver el stack completo ↑](#-t
 Destacados: servidores Linux y bases de datos en sitio, pruebas y despliegues automatizados con Jenkins, infraestructura en la nube y despliegues automáticos en Google Cloud Platform, contenerización de proyectos con Docker, temas personalizados de WordPress en PHP y automatización de procesos con Google Apps Script.
 
 ### 🎓 Formación
+
+<img src="assets/culinary-feature.webp" alt="Platos emplatados en el pase de una cocina de alta gama" width="100%" />
 
 - **Carrera de Gastronomía · Mención Chef en Arte Culinario** — Escuela Culinaria de las Américas, Guayaquil *(feb 2026)*
 - **Bachillerato** — Colegio Alemán Humboldt de Guayaquil
