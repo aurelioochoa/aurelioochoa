@@ -1,0 +1,141 @@
+# The standard Makefile.
+#
+# Copy this into a project, fill in the identity header, then replace each verb
+# below with that stack's real command. Every repo answers the same eleven
+# verbs, so `make` in any of them lists the same vocabulary.
+#
+#   help  setup  dev  build  run  test  check  verify  fmt  clean  distclean
+#
+# Rules that keep the set uniform:
+#
+#   * `make` on its own always prints the help. It never builds, installs or
+#     starts anything.
+#   * A verb that does not apply still EXISTS and explains why, via $(call NA,
+#     '...'). A missing target gives make's "No rule to make target", which
+#     reads like a broken Makefile rather than an answer.
+#   * `check` is the fast gate and `verify` is `check` plus a build.
+#   * `clean` is always safe to run. Anything that costs a reinstall — node_
+#     modules, .venv, target/, docker volumes — belongs to `distclean`.
+#   * A project's own targets keep their own `##@ Section`. Renaming one breaks
+#     the docs, so the old name stays as an alias with no `##` comment, which
+#     keeps it out of the help.
+#
+# The block between the two sentinels is byte-identical in every repo, so
+# checking for drift is a diff and needs no parser.
+
+# ─── Identity (the only part that differs between repos) ─────────────────────
+# No apostrophes in any of these four: they are interpolated into a
+# single-quoted shell string in the help recipe.
+PROJECT       := my-project
+TAGLINE       := one line saying what this is
+# `=` and not `:=`: with `:=` these expand before the variables they cite are
+# defined further down, and the help footer prints empty values with no error.
+HELP_VARS      = PORT=$(PORT)
+HELP_EXAMPLE   = make dev PORT=3000
+
+# ─── Preamble ────────────────────────────────────────────────────────────────
+# -e stops a recipe at the first failing command; -o pipefail stops a gate that
+# pipes through a filter from reporting the filter's exit code instead of the
+# command's — without it, a suite that fails into `tail` "passes".
+SHELL         := /usr/bin/env bash
+.SHELLFLAGS   := -eo pipefail -c
+.DEFAULT_GOAL := help
+MAKEFLAGS     += --no-print-directory
+
+# ─── Colour ──────────────────────────────────────────────────────────────────
+# MAKE_TERMOUT (GNU Make >= 4.1) is set only when stdout is a terminal, and is
+# the only reliable test available here: `test -t 1` inside $(shell ...) always
+# reports false, because make captures that command's stdout through a pipe.
+# So `make help | less` and CI logs stay clean. NO_COLOR disables, FORCE_COLOR
+# overrides both.
+COLOR ?= $(if $(MAKE_TERMOUT),1,0)
+ifdef NO_COLOR
+  COLOR := 0
+endif
+ifdef FORCE_COLOR
+  COLOR := 1
+endif
+ifeq ($(COLOR),1)
+  # Real ESC bytes, so a plain `echo` renders them without needing -e.
+  C_HEAD := $(shell printf '\033[1m')
+  C_CMD  := $(shell printf '\033[36m')
+  C_OK   := $(shell printf '\033[32m')
+  C_WARN := $(shell printf '\033[33m')
+  C_ERR  := $(shell printf '\033[31m')
+  C_DIM  := $(shell printf '\033[2m')
+  C_OFF  := $(shell printf '\033[0m')
+endif
+
+# Explains why a core verb does not apply here, then fails.
+NA = @printf '  $(C_ERR)make $@$(C_OFF) does not apply to $(PROJECT).\n  $(C_DIM)%s$(C_OFF)\n\n' $(1) >&2; exit 2
+
+# Width of the target-name column in help; widen it where names are long.
+HELP_PAD ?= 18
+
+# PROJECT, TAGLINE, HELP_VARS and HELP_EXAMPLE are interpolated into a
+# single-quoted shell string below, so none of them may contain an apostrophe.
+##@ General
+.PHONY: help
+help: ## List the available targets
+	@printf '\n  $(C_HEAD)$(PROJECT)$(C_OFF) — $(TAGLINE)\n'
+	@printf '  $(C_DIM)usage: make <target>$(C_OFF)\n'
+	@awk 'BEGIN { FS = ":.*?## " } \
+	  /^##@ / { printf "\n  $(C_HEAD)%s$(C_OFF)\n", substr($$0, 5); next } \
+	  /^[a-zA-Z0-9_.-]+:.*?## / { printf "    $(C_CMD)%-$(HELP_PAD)s$(C_OFF) %s\n", $$1, $$2 }' \
+	  $(MAKEFILE_LIST)
+	@printf '\n  $(C_DIM)Variables:$(C_OFF) $(HELP_VARS)\n'
+	@printf '  $(C_DIM)Example:$(C_OFF)   $(HELP_EXAMPLE)\n\n'
+
+# ─── End of the shared block ─────────────────────────────────────────────────
+
+PORT ?= 3000
+
+##@ Setup
+.PHONY: setup
+setup: ## First run on a fresh clone: dependencies and local config
+	$(call NA,'node: install + env. rust: cargo fetch. python: .venv + pip install -e. compose: build + migrate + seed.')
+
+##@ Development
+.PHONY: dev
+dev: ## The fast iteration loop
+	$(call NA,'node: $$(PM) run dev. rust: cargo watch -x check, falling back to cargo check when cargo-watch is absent. compose: docker compose up.')
+
+.PHONY: build
+build: ## Produce the production artifact
+	$(call NA,'node: $$(PM) run build. rust: cargo build. compose: docker compose build. A static site with no build step says so here.')
+
+.PHONY: run
+run: ## Execute or serve what build produced
+	$(call NA,'node: $$(PM) run preview. rust: cargo run. compose: docker compose up -d.')
+
+##@ Gates
+.PHONY: test
+test: ## Run the test suite once
+	$(call NA,'node: $$(PM) test. rust: cargo test. python: pytest -q.')
+
+.PHONY: check
+check: ## Fast gate: format check, lint/typecheck, tests
+	$(call NA,'Depend on the steps this repo actually has — never invent one it cannot run.')
+
+.PHONY: verify
+verify: check build ## Full gate: check, then a production build
+
+.PHONY: fmt
+fmt: ## Format the tree in place
+	$(call NA,'node: $$(PM) run format. rust: cargo fmt --all. python: ruff format. No formatter configured means this stays NA.')
+
+##@ Cleaning
+.PHONY: clean
+clean: ## Remove build output and test artifacts, never user data
+	$(call NA,'rm -rf the build output. Nothing that costs a reinstall.')
+
+.PHONY: distclean
+distclean: clean ## clean, plus installed dependencies
+	$(call NA,'node_modules / .venv / target. Guard it with CONFIRM=yes when it destroys docker volumes or real data.')
+
+# ─── Compatibility aliases ───────────────────────────────────────────────────
+# Any name the standard renamed, kept working because the docs still use it.
+# No `##` comment, so these stay out of `make help`.
+#
+# .PHONY: preview
+# preview: run
