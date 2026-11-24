@@ -23,12 +23,13 @@ info = [
   "Education: Culinary Arts · Escuela Culinaria de las Américas",
   "Languages: Spanish · English · German (B2)",
   "",
-  "Web: HTML · CSS/Sass · JS/TS · React · Vue · Angular",
-  "Backend: Node/Express · Laravel/PHP · Python · Java · Lua",
-  "DevOps: Linux · Docker · Jenkins · Nginx · GCP · Vault",
-  "Data: MySQL · MongoDB · WordPress · Apps Script · Bun",
+  "Web: :html5: HTML :css: CSS/Sass :typescript: JS/TS :react: React :vue: Vue :angular: Angular",
+  "Backend: :nodedotjs: Node/Express :laravel: Laravel/PHP :python: Python :java: Java :lua: Lua",
+  "DevOps: :linux: Linux :docker: Docker :jenkins: Jenkins :nginx: Nginx :googlecloud: GCP :vault: Vault",
+  "Data: :mysql: MySQL :mongodb: MongoDB :wordpress: WordPress :appsscript: Apps Script :bun: Bun",
   "",
-  "GitHub: {repos} public repos · {contributions} contributions in the last year",
+  ":mark-github: GitHub: {repos} public repos · {contributions} contributions in the last year",
+  "{heatmap}",
   "Portfolio: aurelioochoa.github.io",
   "LinkedIn: linkedin.com/in/aurelioochoa",
 ]
@@ -36,6 +37,9 @@ info = [
 [intro]
 scope = "all"                # the drone, the info and everything else types in on a visit
 direction = "left-to-right"
+
+[metrics]
+weeks = 44                   # how much of the contribution calendar {heatmap} shows
 
 [colors]
 accent = "#00d4ff"   # the cyan of the portfolio badge
