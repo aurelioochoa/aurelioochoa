@@ -1,0 +1,93 @@
+# Rendered into assets/readmefetch.svg by https://github.com/aurelioochoa/readmefetch
+# (daily, and whenever this file changes: .github/workflows/readmefetch.yml).
+# Preview locally: readmefetch print   ·   render: readmefetch render
+
+user = "aurelio"
+host = "ochoa"
+command = "readmefetch"
+theme = "github-dark"
+logos = ["drone", "tux", "computer", "cauldron", "banner"]
+seconds_per_logo = 5
+output = "assets/readmefetch.svg"
+github = "aurelioochoa"
+uptime_since = 2021-05-01   # first developer job (Just Click Media)
+
+info = [
+  "OS: Software Developer & Certified UAS Pilot",
+  "Host: Guayaquil, Ecuador",
+  "Uptime: {uptime}",
+  "Shell: bash",
+  "Job: Agricultural Drone Pilot @ Fumigasa",
+  "Fleet: DJI Agras T50 · T100 (DGAC Ecuador, 2025)",
+  "Recent: Web & mail automation @ Mediacor Plus",
+  "Education: Culinary Arts · Escuela Culinaria de las Américas",
+  "Languages: Spanish · English · German (B2)",
+  "",
+  "Web: HTML · CSS/Sass · JS/TS · React · Vue · Angular",
+  "Backend: Node/Express · Laravel/PHP · Python · Java · Lua",
+  "DevOps: Linux · Docker · Jenkins · Nginx · GCP · Vault",
+  "Data: MySQL · MongoDB · WordPress · Apps Script · Bun",
+  "",
+  "GitHub: {repos} public repos · {contributions} contributions in the last year",
+  "Portfolio: aurelioochoa.github.io",
+  "LinkedIn: linkedin.com/in/aurelioochoa",
+]
+
+[intro]
+scope = "all"                # the drone, the info and everything else types in on a visit
+direction = "left-to-right"
+
+[colors]
+accent = "#00d4ff"   # the cyan of the portfolio badge
+
+[banner]
+text = "aurelio"
+font = "slant"
+colors = ["#00d4ff", "bright-blue", "bright-magenta", "magenta", "bright-blue"]
+
+# Badges under the terminal: `readmefetch render` writes them to assets/badges/.
+[badges]
+style = "for-the-badge"
+dir = "assets/badges"
+
+[[badge]]
+label = "Portfolio"
+message = "aurelioochoa.github.io"
+link = "https://aurelioochoa.github.io"
+color = "#00d4ff"
+icon = "globe"
+
+[[badge]]
+label = "LinkedIn"
+message = "aurelioochoa"
+link = "https://www.linkedin.com/in/aurelioochoa"
+color = "#0a66c2"
+icon = "briefcase"
+
+[[badge]]
+label = "Email"
+message = "aurelioochoagomez@hotmail.com"
+link = "mailto:aurelioochoagomez@hotmail.com"
+color = "#d14836"
+icon = "mail"
+
+[[badge]]
+label = "Kidtopia"
+message = "kidtopiaplay.com"
+link = "https://kidtopiaplay.com"
+color = "#00d4ff"         # kidtopiaplay.com's aqua
+icon = "game"
+
+[[badge]]
+label = "Cu4renta"
+message = "cu4renta.com"
+link = "https://cu4renta.com"
+color = "#d5b87b"         # cu4renta.com's gold
+icon = "cards"
+
+[[badge]]
+label = "Ceiboware"
+message = "ceiboware.com"
+link = "https://ceiboware.com"
+color = "#0f6fc6"         # ceiboware.com's theme colour
+icon = "tree"
